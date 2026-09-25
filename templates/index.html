@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduGenie AI</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">EDUGENIE AI</p>
+          <h1>Study smarter with AI</h1>
+          <p class="subtitle">
+            Ask questions, get explanations, generate quizzes, summarize notes, and build a personalized learning path.
+          </p>
+        </div>
+        <div class="status-pill">Ready to learn</div>
+      </header>
+
+      <main>
+        <section class="card">
+          <label for="feature-select">Choose a learning tool</label>
+          <select id="feature-select">
+            <option value="qa">Question & Answer</option>
+            <option value="explain">Explain Concept</option>
+            <option value="quiz">Generate Quiz</option>
+            <option value="summarize">Summarize Text</option>
+            <option value="learn/recommendations">Learning Recommendations</option>
+          </select>
+
+          <label for="prompt-input">Enter your content</label>
+          <textarea id="prompt-input" placeholder="Paste a topic, question, or notes here..."></textarea>
+
+          <button id="submit-btn" type="button">Generate</button>
+        </section>
+
+        <section class="card">
+          <h2>Output</h2>
+          <div id="result-box" class="result-box">Your result will appear here.</div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

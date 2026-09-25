@@ -1,0 +1,558 @@
+:root {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: #172033;
+
+    background: #f4f7fb;
+}
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #e8f0ff 0,
+            transparent 35%
+        ),
+        #f4f7fb;
+
+}
+
+
+.app-shell {
+
+    width: min(
+        980px,
+        92%
+    );
+
+    margin: 0 auto;
+
+    padding:
+        48px
+        0
+        28px;
+
+}
+
+
+/* HEADER */
+
+.hero {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    gap: 24px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.eyebrow {
+
+    margin:
+        0
+        0
+        8px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        0.14em;
+
+    color: #5865d8;
+
+}
+
+
+h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(
+            40px,
+            7vw,
+            64px
+        );
+
+    line-height: 0.95;
+
+}
+
+
+.subtitle {
+
+    max-width: 680px;
+
+    margin:
+        16px
+        0
+        0;
+
+    color: #5b6476;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+}
+
+
+.status-pill {
+
+    padding:
+        9px
+        13px;
+
+    border-radius:
+        999px;
+
+    background:
+        #e7ebff;
+
+    color:
+        #4b56c7;
+
+    font-weight:
+        700;
+
+    white-space:
+        nowrap;
+
+}
+
+
+/* CARD */
+
+.card {
+
+    background:
+        white;
+
+    border:
+        1px solid
+        #e5e9f2;
+
+    border-radius:
+        20px;
+
+    padding:
+        24px;
+
+    margin-bottom:
+        18px;
+
+    box-shadow:
+        0
+        12px
+        35px
+        rgba(
+            40,
+            52,
+            80,
+            0.07
+        );
+
+}
+
+
+label {
+
+    display:
+        block;
+
+    margin:
+        0
+        0
+        8px;
+
+    font-weight:
+        750;
+
+}
+
+
+select,
+textarea {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        #d7ddea;
+
+    border-radius:
+        12px;
+
+    padding:
+        13px
+        14px;
+
+    font:
+        inherit;
+
+    color:
+        inherit;
+
+    background:
+        #fbfcfe;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+textarea {
+
+    resize:
+        vertical;
+
+    min-height:
+        170px;
+
+}
+
+
+select:focus,
+textarea:focus {
+
+    outline:
+        3px solid
+        #e6e9ff;
+
+    border-color:
+        #6570df;
+
+}
+
+
+/* BUTTON */
+
+button {
+
+    border:
+        0;
+
+    border-radius:
+        12px;
+
+    padding:
+        12px
+        18px;
+
+    font:
+        inherit;
+
+    font-weight:
+        750;
+
+    cursor:
+        pointer;
+
+    background:
+        #5865d8;
+
+    color:
+        white;
+
+}
+
+
+button:hover {
+
+    filter:
+        brightness(
+            0.96
+        );
+
+}
+
+
+button:disabled {
+
+    opacity:
+        0.6;
+
+    cursor:
+        wait;
+
+}
+
+
+.secondary {
+
+    background:
+        #eef1f7;
+
+    color:
+        #333b4f;
+
+    padding:
+        9px
+        13px;
+
+}
+
+
+/* RESULT */
+
+.result-heading {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+
+.result-heading h2 {
+
+    margin:
+        0
+        0
+        14px;
+
+}
+
+
+.result {
+
+    line-height:
+        1.7;
+
+    white-space:
+        pre-wrap;
+
+    overflow-wrap:
+        anywhere;
+
+}
+
+.result-box {
+    line-height: 1.7;
+    color: var(--text);
+    min-height: 120px;
+    font-size: 1rem;
+}
+
+.result-box h3,
+.result-box h4 {
+    margin: 18px 0 10px;
+    color: #5865d8;
+}
+
+.result-box p,
+.result-box li {
+    margin: 0 0 10px;
+}
+
+.result-box ul,
+.result-box ol {
+    margin: 0 0 12px 20px;
+    padding-left: 12px;
+}
+
+.result-box strong {
+    color: #1d2b4f;
+}
+
+
+/* QUIZ */
+
+.quiz-question {
+
+    border:
+        1px solid
+        #e5e9f2;
+
+    border-radius:
+        14px;
+
+    padding:
+        16px;
+
+    margin:
+        12px
+        0;
+
+}
+
+
+.quiz-question h3 {
+
+    margin:
+        0
+        0
+        12px;
+
+    font-size:
+        16px;
+
+}
+
+
+.quiz-option {
+
+    display:
+        block;
+
+    margin:
+        8px
+        0;
+
+    padding:
+        9px
+        10px;
+
+    border-radius:
+        9px;
+
+    background:
+        #f6f8fc;
+
+}
+
+
+.quiz-option.correct {
+
+    background:
+        #e9f8ef;
+
+    border:
+        1px solid
+        #a8dfbd;
+
+}
+
+
+.quiz-option.wrong {
+
+    background:
+        #fff0f0;
+
+    border:
+        1px solid
+        #f0b3b3;
+
+}
+
+
+.quiz-feedback {
+
+    font-weight:
+        650;
+
+}
+
+
+/* ERROR */
+
+.error {
+
+    margin:
+        14px
+        0
+        0;
+
+    color:
+        #b42318;
+
+    font-weight:
+        650;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    color:
+        #737c8f;
+
+    font-size:
+        13px;
+
+    text-align:
+        center;
+
+    padding:
+        12px;
+
+}
+
+
+/* MOBILE */
+
+@media (
+    max-width: 680px
+) {
+
+    .app-shell {
+
+        padding-top:
+            28px;
+
+    }
+
+
+    .hero {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .status-pill {
+
+        align-self:
+            flex-start;
+
+    }
+
+
+    .card {
+
+        padding:
+            18px;
+
+    }
+
+}
